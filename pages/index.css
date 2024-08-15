@@ -4,6 +4,7 @@
 .page {
   background-color: black;
   color: white;
+  margin-bottom: 40px;
 }
 
 .page__section {
@@ -17,18 +18,28 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
   margin-top: 45px;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-bottom: 1px solid #545454;
+  padding-bottom: 28px;
 }
 
 .profile {
   display: flex;
   padding-top: 40px;
   align-items: center;
+  width: 100%;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile__title {
@@ -40,15 +51,13 @@
   grid-area: title;
   margin: 0;
   white-space: nowrap;
-  left: 350px;
-  top: 181px;
-  width: 373px;
 }
 
 .profile__info {
   display: grid;
   grid-template-areas: "title button" "description description";
   grid-template-columns: minmax(auto, 373px) auto;
+  column-gap: 18px;
 }
 
 .profile__description {
@@ -67,7 +76,7 @@
   object-fit: cover;
   background-position: center;
   margin-right: 24px;
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .profile__edit-button {
@@ -75,14 +84,18 @@
   height: 24px;
   width: 24px;
   grid-area: button;
-  left: 741px;
+  margin-top: 16px;
+  border: 1px solid #ffffff;
 }
 
 .profile__add-button {
-  background: transparent url(../images/Add\ Button\ .png) center no-repeat;
+  background: transparent url(../images/Add\ Button.png) center no-repeat;
   height: 50px;
   width: 150px;
   margin-left: auto;
+  border: #fff;
+  margin-bottom: 26px;
+  border: 2px solid #ffffff;
 }
 
 .cards {
@@ -103,6 +116,7 @@
   flex-direction: column;
   border-radius: 10px;
   list-style: none;
+  overflow: hidden;
 }
 
 .card__image {
@@ -110,16 +124,24 @@
   height: 282px;
 }
 
-.card__descprition {
+.card__title {
+  max-width: 373px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card__description {
   display: flex;
   background-color: #fff;
   color: black;
   padding: 25px 25px 20px;
   align-items: center;
   justify-content: space-between;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   font-family: "Inter";
   font-weight: 900;
   font-size: 24px;
@@ -136,7 +158,37 @@
   outline: none;
 }
 
-@media and (max-width: 480px) {
+.footer {
+  color: #545454;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1100px) {
+  .page__section {
+    margin: 0 20px;
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile__title {
+    font-size: 22px;
+    font-family: "Inter";
+    line-height: 26.63px;
+  }
+
+  .profile__edit-button {
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
   .profile {
     background-color: pink;
     flex-direction: column;
@@ -146,5 +198,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    margin-left: 62px;
+    align-items: center;
+  }
+
+  .profile__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile__add-button {
+    margin: 0;
+    width: 282px;
+    margin-bottom: 36px;
   }
 }
