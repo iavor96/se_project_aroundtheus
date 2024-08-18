@@ -1,21 +1,27 @@
 # Project 3: Around The U.S.
 
-### Overview  
+### Project Name:
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+Around The U.S.
+
+### Description:
+
+This project is designed to showcase various tourist attractions around the U.S. It allows users to browse through various locations, view images, and read descriptions about these places.
+
+### Technologies and Techniques Used:
+
+- HTML5
+- CSS3
+- Flexbox
+- Grid Layout
+- Media Queries for responsive design
+- BEM methodology for structuring CSS classes
+- Figma for design references
+
+### Project Features:
+
+- A fully responsive website that adjusts seamlessly to different screen sizes.
+- Organized and structured code using BEM methodology.
+- High-quality images optimized for faster load times.
+
+[Project screenshot](./images/Screen%20Shot%202024-08-18%20at%2011.08.28%20AM.png)
