@@ -1,6 +1,6 @@
 .profile {
   display: flex;
-  padding-top: 40px;
+  padding-top: 36px;
   align-items: center;
   width: 100%;
   max-width: 880px;
@@ -10,13 +10,16 @@
 
 .profile__title {
   font-size: 42px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   line-height: 48px;
   font-weight: 500;
   grid-area: title;
   margin: 0;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__info {
@@ -28,11 +31,14 @@
 
 .profile__description {
   font-size: 18px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   line-height: 22px;
   font-weight: 400;
   grid-area: description;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__image {
@@ -46,28 +52,37 @@
 }
 
 .profile__edit-button {
-  background: transparent url(../images/Edit\ Button.png) center no-repeat;
+  background: transparent url(../images/Edit\ Button.svg) center no-repeat;
   height: 24px;
   width: 24px;
   grid-area: button;
   margin-top: 16px;
   border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  transition: opacity 0.3s ease-in-out;
 }
 
 .profile__add-button {
-  background: transparent url(../images/Add\ Button.png) center no-repeat;
+  background: transparent url(../images/Add\ Button.svg) center no-repeat;
   height: 50px;
   width: 150px;
   margin-left: auto;
   border: #fff;
   margin-bottom: 26px;
   border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.profile__add-button:hover {
+  transition: opacity 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
   .profile__title {
     font-size: 22px;
-    font-family: "Inter";
     line-height: 26.63px;
   }
 
@@ -75,17 +90,15 @@
     align-items: center;
     margin: 0;
   }
+
+  .profile__info {
+    grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 620px) {
   .profile {
-    background-color: pink;
     flex-direction: column;
-  }
-
-  .profile__image {
-    width: 120px;
-    height: 120px;
   }
 
   .profile__info {
@@ -93,7 +106,6 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-left: 62px;
     align-items: center;
   }
 
@@ -105,6 +117,6 @@
   .profile__add-button {
     margin: 0;
     width: 282px;
-    margin-bottom: 36px;
+    margin-bottom: 2px;
   }
 }
