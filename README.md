@@ -25,3 +25,7 @@ This project is designed to showcase various tourist attractions around the U.S.
 - High-quality images optimized for faster load times.
 
 [Project screenshot](./images/Screen%20Shot%202024-08-18%20at%2011.08.28%20AM.png)
+
+## Live Demo
+
+You can view the project live at: [Live Demo](https://iavor96.github.io/se_project_aroundtheus/)
