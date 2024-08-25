@@ -28,4 +28,4 @@ This project is designed to showcase various tourist attractions around the U.S.
 
 ## Live Demo
 
-You can view the project live at: [Live Demo]()
+You can view the project live at: [Live Demo](https://iavor96.github.io/se_project_aroundtheus/)
