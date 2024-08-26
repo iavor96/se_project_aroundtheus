@@ -32,4 +32,4 @@ You can view the project live at: [Live Demo](https://iavor96.github.io/se_proje
 
 ## Video about Project
 
-https://drive.google.com/drive/my-drive
+https://drive.google.com/file/d/1WlxJ8cCedb4hNJ89p34W8-ups5mw60ZN/view?usp=sharing
