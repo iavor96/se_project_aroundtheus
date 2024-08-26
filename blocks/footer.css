@@ -13,9 +13,13 @@
   text-align: left;
 }
 
-@media and (max-width: 320px) {
+@media screen and (max-width: 320px) {
+  .footer {
+    margin-top: 48px;
+  }
+
   .footer__copyright {
-    margin-bottom: 48px;
-    margin-left: 19px;
+    margin-top: 0px;
+    margin-bottom: 36px;
   }
 }
