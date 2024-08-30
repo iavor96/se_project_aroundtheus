@@ -25,3 +25,6 @@
     max-width: calc(100% - 40px);
   }
 }
+
+@media screen and (max-width: 320px) {
+}
