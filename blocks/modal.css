@@ -8,6 +8,7 @@
   z-index: 999;
   display: flex;
   padding: 0 19px;
+  visibility: hidden;
 }
 
 .modal__heading {
@@ -81,4 +82,8 @@
 .modal__input:focus {
   outline: none;
   border-bottom-color: #000;
+}
+
+.modal_opened {
+  visibility: visible;
 }
