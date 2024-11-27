@@ -51,14 +51,15 @@
           class="modal__close"
           id="profile-close-button"
         ></button>
-        <p class="modal__heading">Edit Profile</p>
+        <p class="modal__title">Edit Profile</p>
         <form class="modal__form" name="editProfile">
           <input
             type="text"
-            name="heading"
+            name="title"
             class="modal__input"
             id="profile-title-input"
             placeholder="Name"
+            required
           />
           <input
             type="text"
@@ -66,6 +67,7 @@
             class="modal__input"
             id="profile-description-input"
             placeholder="Descsription"
+            required
           />
           <button type="submit" class="modal__button">Save</button>
         </form>
